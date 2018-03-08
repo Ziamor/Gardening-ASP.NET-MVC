@@ -1,0 +1,30 @@
+﻿@model Gardening.Models.PlantPlantType
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PlantPlantType</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Plant)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Plant.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PlantType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PlantType.Name)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
